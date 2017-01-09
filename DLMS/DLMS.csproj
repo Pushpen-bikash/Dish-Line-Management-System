@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73E98BB1-766C-4241-9DB1-AB8B67378A94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DLMS</RootNamespace>
+    <AssemblyName>DLMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="SpellNumber, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\SpellNumber.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCustomer.Designer.cs">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCustomers.Designer.cs">
+      <DependentUpon>fCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDesignation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDesignation.Designer.cs">
+      <DependentUpon>fDesignation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDesignations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDesignations.Designer.cs">
+      <DependentUpon>fDesignations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployee.designer.cs">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployees.designer.cs">
+      <DependentUpon>fEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExpenditure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExpenditure.designer.cs">
+      <DependentUpon>fExpenditure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExpenditures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExpenditures.designer.cs">
+      <DependentUpon>fExpenditures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExpenseIteams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExpenseIteams.designer.cs">
+      <DependentUpon>fExpenseIteams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExpenseItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExpenseItem.designer.cs">
+      <DependentUpon>fExpenseItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExpense_Expenditure_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExpense_Expenditure_Report.Designer.cs">
+      <DependentUpon>fExpense_Expenditure_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFeeCollDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFeeCollDetails.Designer.cs">
+      <DependentUpon>fFeeCollDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMainForm.Designer.cs">
+      <DependentUpon>FMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fOutlet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOutlet.Designer.cs">
+      <DependentUpon>fOutlet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fOutlets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOutlets.Designer.cs">
+      <DependentUpon>fOutlets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSystemInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSystemInformation.designer.cs">
+      <DependentUpon>fSystemInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fCustomer.resx">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCustomers.resx">
+      <DependentUpon>fCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDesignation.resx">
+      <DependentUpon>fDesignation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDesignations.resx">
+      <DependentUpon>fDesignations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEmployee.resx">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEmployees.resx">
+      <DependentUpon>fEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExpenditure.resx">
+      <DependentUpon>fExpenditure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExpenditures.resx">
+      <DependentUpon>fExpenditures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExpenseIteams.resx">
+      <DependentUpon>fExpenseIteams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExpenseItem.resx">
+      <DependentUpon>fExpenseItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExpense_Expenditure_Report.resx">
+      <DependentUpon>fExpense_Expenditure_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFeeCollDetails.resx">
+      <DependentUpon>fFeeCollDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMainForm.resx">
+      <DependentUpon>FMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOutlet.resx">
+      <DependentUpon>fOutlet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOutlets.resx">
+      <DependentUpon>fOutlets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSystemInformation.resx">
+      <DependentUpon>fSystemInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rExpenseItemExpenditure.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DLMS.BO.pcdExIEpen_Result.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLMS.BO\DLMS.BO.csproj">
+      <Project>{580c9225-0f0a-4468-91d9-ebfb9600bc21}</Project>
+      <Name>DLMS.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\SpellNumber.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IT11_company1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

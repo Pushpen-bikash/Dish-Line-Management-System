@@ -1,0 +1,10 @@
+F:\DLMS_Again\dlms\Report1\bin\Debug\Report1.exe.config
+F:\DLMS_Again\dlms\Report1\bin\Debug\Report1.exe
+F:\DLMS_Again\dlms\Report1\bin\Debug\Report1.pdb
+F:\DLMS_Again\dlms\Report1\obj\Debug\Report1.csprojResolveAssemblyReference.cache
+F:\DLMS_Again\dlms\Report1\obj\Debug\Report1.Properties.Resources.resources
+F:\DLMS_Again\dlms\Report1\obj\Debug\Report1.csproj.GenerateResource.Cache
+F:\DLMS_Again\dlms\Report1\obj\Debug\RdlCompile.cache
+F:\DLMS_Again\dlms\Report1\obj\Debug\RdlCompile.compiled
+F:\DLMS_Again\dlms\Report1\obj\Debug\Report1.exe
+F:\DLMS_Again\dlms\Report1\obj\Debug\Report1.pdb
